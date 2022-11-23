@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이진솔's 개인포트폴리오</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function(){
+                $(".changecolor li:nth-child(1) a").click(
+                    function(){
+                        $("body").css("background-color","#fff");
+                        return false; //a클릭시 화면새로고침방지
+                    }
+                );
+                $(".changecolor li:nth-child(2) a").click(
+                    function(){
+                        $("body").css("background-color","#333");
+                        return false; //a클릭시 화면새로고침방지
+                    }
+                );
+                // aside 클릭 - 슬라이드인
+                $(".aside .ham").click(
+                    function () {
+                    //$("aside").addClass("show");
+                    $(".aside").toggleClass("show"); //클래스를 붙였다 띄었다 함
+                    return false; //a클릭시 화면새로고침방지
+                    }
+                );
+                //대메뉴 마우스올리면 실행하시오 
+                $("header ul.gnb li a").hover(
+                    function(){
+                        $(this).addClass("over");
+                        $(this).parent().siblings().children().removeClass("over");
+                        // parent()는 앞요소의 부모요소를 가리킴
+                        // siblings()는 앞요소의 다른형제요소를 가리킴
+                        // children()는 앞요소의 자식요소를 가르킴
+                    }
+                );
+            }
+        );
+    </script>
+
+    
+</head>
+<body>
+    <!-- 상단 영역 -->
+    <!-- <header>
+         <div class="wrap">
+            <h1><a href="">jinsol's portfolio</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="">about me</a></li>
+                    <li><a href="">skills</a></li>
+                    <li><a href="">portfolio</a></li>
+                    <li><a href="">design</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <ul class="changecolor">
+                    <li><a href="">day</a></li>
+                    <li><a href="">night</a></li>
+                </ul>
+                <div class="aside">
+                    <a href="" class="ham">메뉴보기</a>
+                    <ul>
+                        <li><a href="">about me</a></li>
+                        <li><a href="">skills</a></li>
+                        <li><a href="">portfolio</a></li>
+                        <li><a href="">design</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header> -->
+    <!-- 타이틀 영역 -->
+    <div id="title"></div>
+    <!-- 내용 영역 -->
+    <div class="frame">
+        <!-- 상단 영역 -->
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            <div class="alarm"></div>
+        </header>
+        <div class="content">
+            <!-- 사이드 메뉴 -->
+            <aside>
+                <h2>Apps</h2>
+                <ul>
+                    <li><a href="">All Apps</a></li>
+                </ul>
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Design</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </aside>
+            <!-- 컨텐츠 내용 -->
+            <main>
+                <ul>
+                    <li>
+                        <h2></h2>
+                        <h3>Photoshop</h3>
+                        <div class="barbox">
+                            <div class="bar"></div>
+                        </div>
+                        <p>95%</p>
+                        <div class="menu"></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2></h2>
+                        <h3>Photoshop</h3>
+                        <div class="barbox">
+                            <div class="bar"></div>
+                        </div>
+                        <p>95%</p>
+                        <div class="menu"></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2></h2>
+                        <h3>Photoshop</h3>
+                        <div class="barbox">
+                            <div class="bar"></div>
+                        </div>
+                        <p>95%</p>
+                        <div class="menu"></div>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        
+    </div>
+    <!-- 하단 영역 -->
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+body{
+    transition: all 1s;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.aside{
+    background-color: #eee;
+    width: 200px;
+    /* height: 400px; */
+    position: fixed;
+    right: -220px;
+    top: 100px;
+    transition: all 1s;
+    padding: 10px;
+  }
+ .show{
+    right: 0 !important;
+ }
+  .aside .ham{
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+  } 
+  .aside ul{
+
+  }
+  .aside ul li{
+
+  line-height: 2;
+  }
+  .aside ul li a{
+
+  }
+
+header ul.gnb{
+  
+}
+header ul.gnb li{
+  
+}
+header ul.gnb li a{
+  
+}
+.over{
+  color: red;
+}
+
+
+/* 포트폴리오 */
+.frame{
+  width: 1250px;
+  height: 760px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
+}
+/* 상단 영역 */
+header{
+
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+header ul{
+
+  display: flex;
+  margin: auto 0;
+}
+header ul li{
+
+  margin-right: 10px;
+}
+header ul li a{
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+header ul li:nth-child(1) a{
+  background-color: red;
+}
+header ul li:nth-child(2) a{
+  background-color: yellow;
+}
+header ul li:nth-child(3) a{
+  background-color: green;
+}
+header .alarm{
+
+  background-image: url(../img/bell.png);
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  filter: invert(100%);
+  background-repeat: no-repeat;
+  margin: auto 0;
+}
+
+/* 내용 */
+.content{
+
+}
+/* 사이드 메뉴 */
+.content {
+  height: calc(100% - 60px);
+  display: flex;
+}
+.content aside {
+  width: 20%;
+  border-right: 1px solid rgba(0,0,0,0.2);
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.content aside h2{
+  
+  padding: 15px;
+}
+.content aside ul {
+}
+.content aside ul li {
+  padding: 15px;
+  background-image: url(../img/menuicon01.svg);
+  background-repeat: no-repeat;
+  background-size: 27px;
+  background-position: left;
+  background-position-x: 15px;
+  filter: invert(100%);
+}
+.content aside ul li a {
+  margin-left: 36px;
+}
+/* 컨텐츠 내용 */
+.content main{
+
+  width: 80%;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(0,0,0,0.1);
+}
+.content main ul {
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.content main ul li {
+  display: flex;
+  /*! flex-direction: column; */
+}
+.content main ul li h2 {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/ps.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content main ul li h3 {
+}
+.content main ul li .barbox {
+  width: 300px;
+  height: 7px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.content main ul li .barbox .bar {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+}
+.content main ul li p {
+}
+.content main ul li .menu {
+}
+
+
+
+
+
+
+
+
+ 
+
