@@ -145,49 +145,74 @@ header .alarm{
 .content aside ul li a {
   margin-left: 36px;
 }
-/* 컨텐츠 내용 */
+/* -------------------------컨텐츠 내용-------------------------- */
+/* about me */
+.content .aboutme {
+}
+.content .aboutme .infowrap {
+  display: flex;
+}
+.content .aboutme .infowrap h2.icon {
+  width: 120px;
+  height: 140px;
+  background-image: url(../img/icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto 0;
+  margin-right: 40px;
+}
+.content .aboutme .infowrap>p {
+}
+.content .aboutme p {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* skills */
 .content main{
-
   width: 80%;
-  padding: 30px;
+  padding: 40px;
   justify-content: space-between;
   align-items: flex-start;
   background-color: rgba(0,0,0,0.1);
 }
-.content main ul {
+.content .skills{
+  display: none;
+}
+.content .skills ul {
   padding: 10px;
   border-radius: 20px;
   width: 100%;
   box-sizing: border-box;
 }
-.content main ul li {
+.content .skills ul li {
   display: flex;
   /*! flex-direction: column; */
 }
-.content main ul li h2 {
+.content .skills ul li h2 {
   width: 40px;
   height: 40px;
   background-image: url(../img/ps.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.content main ul li h3 {
+.content .skills ul li h3 {
 }
-.content main ul li .barbox {
+.content .skills ul li .barbox {
   width: 300px;
   height: 7px;
   background-color: rgba(0,0,0,0.3);
   border-radius: 10px;
   overflow: hidden;
 }
-.content main ul li .barbox .bar {
+.content .skills ul li .barbox .bar {
   width: 80%;
   height: 100%;
   background-color: white;
 }
-.content main ul li p {
+.content .skills ul li p {
 }
-.content main ul li .menu {
+.content .skills ul li .menu {
 }
 
 
